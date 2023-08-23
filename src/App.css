@@ -9,21 +9,31 @@
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 1500ms;
 }
+
+.multiply {
+  margin-left: 2em;
+  vertical-align: middle;
+}
+.header {
+  vertical-align: 20%;
+}
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ff0000);
+  filter: hue-rotate(90deg);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #00ff00);
 }
 
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -35,6 +45,7 @@
 
 .card {
   padding: 2em;
+  margin-right: 2em;
 }
 
 .read-the-docs {
